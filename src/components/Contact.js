@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineMail ,AiOutlineWhatsApp} from "react-icons/ai";
-
-
+import Fade from 'react-reveal/Fade';
 
 const Contact = () => {
   const contact_info = [
@@ -11,6 +10,7 @@ const Contact = () => {
   ];
   return (
     <section id="contact" className="py-10 px-3 text-white">
+    <Fade left>
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-cyan-600">Me</span>
@@ -42,6 +42,7 @@ const Contact = () => {
           <a  className="bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6  h-10 w-fit flex items-center" href="mailto:imenturki99@gmail.com">Click to Send an Email</a>
         </div>
       </div>
+      </Fade>
     </section>
   );
 };

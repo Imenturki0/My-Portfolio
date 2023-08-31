@@ -9,6 +9,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import project1 from "../assets/project-1.png";
+import project2 from "../assets/project-2.jpg";
+import project3 from "../assets/project-3.png";
 
 
 import 'swiper/css/autoplay';
@@ -17,19 +20,19 @@ const Project = () => {
   const projects = [
 
     {
-      img: "./project-1.png",
+      img: project1,
       name: "Turkey Tour Guide Website",
       github_link: "https://github.com/Imenturki0/turkey-travel-guide/tree/master",
       live_link: "https://myjobsearch.netlify.app",
     },
     {
-      img: "./project-2.jpg",
+      img: project2,
       name: "Coffee Mobile App",
       github_link: "https://github.com/Imenturki0/Bekro-app",
       live_link: "https://highking01.netlify.app",
     },
     {
-      img: "./project-3.png",
+      img: project3,
       name: "Lesson Adaptation System",
       github_link:
         "https://github.com/Imenturki0/Lesson-Adaptation-System",

@@ -6,6 +6,7 @@ import {FaReact,FaNodeJs,FaPython} from "react-icons/fa";
 
 import { DiCss3 ,DiHtml5,DiJavascript} from "react-icons/di";
 import {RiFlutterFill} from "react-icons/ri";
+import Swing from 'react-reveal/Swing';
 
 
 const Skills = () => {
@@ -58,7 +59,8 @@ const Skills = () => {
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
           {skills.map((skill, i) => (
-            <div
+           <Swing>
+           <div
               key={i}
               className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
             >
@@ -74,6 +76,7 @@ const Skills = () => {
               </div>
               <p className="text-xl mt-3">{skill.level}</p>
             </div>
+            </Swing> 
           ))}
         </div>
       </div>

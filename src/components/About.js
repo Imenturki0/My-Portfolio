@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import File from "../assets/CV.pdf"
+import Slide from 'react-reveal/Fade';
 
 const About = () => {
+  
  
   return (
     <section id="about" className="py-10 text-white">
-      <div className="text-center mt-8">
+    <div className="text-center mt-8">
+    <Slide left duration={1000}> 
         <h3 className="text-4xl font-semibold">
           About <span className="text-cyan-600">Me</span>
         </h3>
         <p className="text-gray-400 my-3 text-lg">My introduction</p>
-        <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto p-2">
+      
+       <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto p-2">
           
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
@@ -34,6 +38,7 @@ const About = () => {
             </div>
                 </div>*/}
         </div>
+        </Slide>  
       </div>
     </section>
   );
